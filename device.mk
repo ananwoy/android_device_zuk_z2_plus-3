@@ -328,6 +328,7 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwpa_client \
     wificond \
+    wifilogd \
     hostapd \
     readmac \
     dhcpcd.conf \
