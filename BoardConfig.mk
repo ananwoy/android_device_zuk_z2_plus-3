@@ -78,7 +78,7 @@ TARGET_KERNEL_CONFIG := n7x-caf_z2_plus_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
 
 # QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
+#BOARD_USES_QCOM_HARDWARE := true
 
 # Audio
 USE_DEVICE_SPECIFIC_AUDIO := true
