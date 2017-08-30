@@ -122,7 +122,7 @@
         <version>2.0</version>
         <interface>
             <name>ISoundTriggerHw</name>
-            <instance>msm8996</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
