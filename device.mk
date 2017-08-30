@@ -281,6 +281,11 @@ PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     ueventd.qcom.rc
 
+# Radio Hals
+PRODUCT_PACKAGES := \
+    android.hardware.radio@1.0-impl \
+    android.hardware.radio.deprecated@1.0-impl
+
 # RIL
 PRODUCT_PACKAGES += \
     librmnetctl \
