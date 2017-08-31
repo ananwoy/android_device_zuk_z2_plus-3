@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     libtinyxml
 
 # Doze mode
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     ZukDoze
 
 # Fingerprint
