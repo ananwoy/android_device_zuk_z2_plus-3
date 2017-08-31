@@ -35,6 +35,8 @@
 #include "property_service.h"
 #include "vendor_init.h"
 #include "log.h"
+#include <cutils/properties.h>
+#include "util.h"
 using android::base::GetProperty;
 
 static void init_alarm_boot_properties()
@@ -69,11 +71,6 @@ static void init_alarm_boot_properties()
 }
 
 void vendor_load_properties() {
-    char device[PROP_VALUE_MAX];
-
-    device = android::base::GetProperty("ro.product.device","");
-    if (strncmp(device, "z2_plus", PROP_VALUE_MAX))
-        return;
 
     property_set("ro.product.model", "Z2 Plus");
 
