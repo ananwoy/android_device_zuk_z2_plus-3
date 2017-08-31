@@ -31,10 +31,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/sysinfo.h>
-#include <cutils/properties.h>
+#include <android-base/properties.h>
+#include "property_service.h"
 #include "vendor_init.h"
 #include "log.h"
-#include "util.h"
+using android::base::GetProperty;
 
 static void init_alarm_boot_properties()
 {
@@ -69,14 +70,12 @@ static void init_alarm_boot_properties()
 
 void vendor_load_properties() {
     char device[PROP_VALUE_MAX];
-    char rf_version[PROP_VALUE_MAX];
-    int rc;
 
-    rc = property_get("ro.product.device", device, NULL);
-    if (!rc || strncmp(device, "z2_plus", PROP_VALUE_MAX))
+    device = android::base::GetProperty("ro.product.device","");
+    if (strncmp(device, "z2_plus", PROP_VALUE_MAX))
         return;
 
-        property_set("ro.product.model", "Z2 Plus");
+    property_set("ro.product.model", "Z2 Plus");
 
     init_alarm_boot_properties();
 }
