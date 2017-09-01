@@ -66,6 +66,7 @@ on early-boot
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    mount_all fstab.qcom
 
 on boot
 
