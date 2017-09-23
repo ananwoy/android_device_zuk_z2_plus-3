@@ -135,12 +135,9 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.msm8996 \
     gralloc.msm8996 \
     hwcomposer.msm8996 \
-    memtrack.msm8996 \
-    liboverlay \
-    libtinyxml
+    memtrack.msm8996
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
