@@ -160,6 +160,9 @@ TARGET_USES_HWC2 := true
 # HIDL
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_z2_plus
 TARGET_RECOVERY_DEVICE_MODULES := libinit_z2_plus
