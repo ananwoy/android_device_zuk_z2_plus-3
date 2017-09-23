@@ -173,7 +173,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:system/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:system/etc/xtwifi.conf
 
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl
@@ -181,10 +180,6 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
-
-# Graphics
-PRODUCT_PACKAGES += \
-    libsdm-disp-apis
 
 # HIDL
 $(call inherit-product, $(LOCAL_PATH)/hidl.mk)
