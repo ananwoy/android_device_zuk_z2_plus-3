@@ -189,6 +189,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsdm-disp-apis
 
+# HIDL
+$(call inherit-product, $(LOCAL_PATH)/hidl.mk)
+
 # IPA Manager
 PRODUCT_PACKAGES += \
     ipacm \
