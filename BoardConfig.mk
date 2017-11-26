@@ -193,3 +193,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/zuk/z2_plus/BoardConfigVendor.mk
+-include vendor/zuk/msm8996-common/msm8996-common-vendor.mk
